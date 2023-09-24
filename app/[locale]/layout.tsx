@@ -26,8 +26,42 @@ export async function generateMetadata({
 }
 
 // Locale Fonts
-export const englishRecoletaFont = localFont({
+export const englishMonaSansFont = localFont({
   src: "../../public/fonts/en/MonaSans/MonaSans[slnt,wdth,wght].woff2",
+  variable: "--font-heading",
+})
+
+export const englishRecoletaFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/en/Recoleta/Recoleta-Thin.ttf",
+      weight: "100"
+    },
+    {
+      path: "../../public/fonts/en/Recoleta/Recoleta-Light.ttf",
+      weight: "300"
+    },
+    {
+      path: "../../public/fonts/en/Recoleta/Recoleta-Regular.ttf",
+      weight: "400"
+    },
+    {
+      path: "../../public/fonts/en/Recoleta/Recoleta-Medium.ttf",
+      weight: "500"
+    },
+    {
+      path: "../../public/fonts/en/Recoleta/Recoleta-SemiBold.ttf",
+      weight: "600"
+    },
+    {
+      path: "../../public/fonts/en/Recoleta/Recoleta-Bold.ttf",
+      weight: "700"
+    },
+    {
+      path: "../../public/fonts/en/Recoleta/Recoleta-Black.ttf",
+      weight: "900"
+    },
+  ],
   variable: "--font-heading",
 })
 

@@ -36,6 +36,13 @@
     "block": "block",
     "allow": "allow",
     "decline": "decline",
-    "soon": "soon"
+    "soon": "soon",
+    "blog": "blog",
+    "terms": "terms",
+    "privacy": "privacy"
+  },
+  "home": {
+    "title": "Hey 👋, I'm Omid. A full-stack developer with years of experience and enjoy building sites & apps. My focus is React (Next.js).",
+    "download free ebook": "download free ebook"
   }
 }
