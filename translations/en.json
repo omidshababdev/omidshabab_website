@@ -1,6 +1,6 @@
 {
   "general": {
-    "omid shabab": "Omid Shabab",
+    "omid_shabab": "Omid Shabab",
     "name": "name",
     "talki": "talki",
     "chat": "chat",
@@ -39,10 +39,22 @@
     "soon": "soon",
     "blog": "blog",
     "terms": "terms",
-    "privacy": "privacy"
+    "privacy": "privacy",
+    "light": "light",
+    "dark": "dark"
+  },
+  "lang": {
+    "english": "English",
+    "persian": "Persian"
+  },
+  "header": {
+    "free_downloads": "free downloads"
+  },
+  "footer": {
+    "select_language": "select language",
+    "copyright": "All rights of this site are reserved for Omid Shabab."
   },
   "home": {
-    "title": "Hey 👋, I'm Omid. A full-stack developer with years of experience and enjoy building sites & apps. My focus is React (Next.js).",
-    "download free ebook": "download free ebook"
+    "title": "Hey 👋, I'm Omid. A full-stack developer with years of experience and enjoy building sites & apps. My focus is React (Next.js)."
   }
 }

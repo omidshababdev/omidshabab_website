@@ -9,6 +9,10 @@ import { NextIntlClientProvider } from 'next-intl'
 import localFont from "next/font/local"
 import { notFound } from 'next/navigation'
 
+import { Quicksand } from 'next/font/google'
+
+const englishLatoFont = Quicksand({ subsets: ['latin'] })
+
 // Dynamic Metadata based on locales
 export async function generateMetadata({
   params: { locale },
@@ -20,8 +24,8 @@ export async function generateMetadata({
   const translations = await getTranslations(locale)
 
   return {
-    title: translations["general"]["omid shabab"],
-    description: translations["general"].name,
+    title: translations.general.omid_shabab,
+    description: translations.general.name,
   }
 }
 
@@ -73,11 +77,11 @@ export const persianEstedadFont = localFont({
 export function LangFont(locale: string): string {
   switch (locale) {
     case "en":
-      return englishRecoletaFont.className
+      return englishLatoFont.className
     case "fa":
       return persianEstedadFont.className
     default:
-      return englishRecoletaFont.className
+      return englishLatoFont.className
   }
 }
 
