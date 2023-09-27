@@ -11,9 +11,9 @@ export default function BlogLayout({
      children: React.ReactNode
 }) {
      return (
-          <div className="flex flex-col min-h-full max-w-[1200px] w-[1200px]">
+          <div className="flex flex-col min-h-full max-w-[1200px]">
                <Header />
-               <div className="flex flex-1 w-full min-h-max py-2 font-normal gap-[30px]">
+               <div className="flex flex-1 w-full min-h-max py-2 font-normal gap-[30px] px-5 sm:px-0">
                     <div className="w-full">
                          {children}
                     </div>
