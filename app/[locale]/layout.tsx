@@ -117,7 +117,7 @@ export default async function RootLayout({
     <html lang={locale} dir={dir}>
       <body className={cn(
         font,
-        "flex justify-center"
+        "flex justify-center min-h-screen"
       )}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider

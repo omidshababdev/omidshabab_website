@@ -12,35 +12,39 @@ export default function Footer() {
      const footer = useTranslations("footer");
 
      return (
-          <div className="flex flex-1 w-full gap-[20px] py-[30px] justify-between items-center font-semibold text-[14px]">
-               <div className="flex">
+          <div className="flex w-full gap-[20px] bottom-0 py-[20px] sm:py-[30px] justify-between items-center text-[14px] px-5 sm:px-0">
+               <div className="hidden sm:w-full sm:flex sm:flex-grow">
                     {footer("copyright")}
                </div>
-               <div className="flex gap-[15px] h-full items-center">
-                    <div
-                         onClick={() => null}
-                         className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] transition-opacity cursor-pointer capitalize"
-                    >
-                         {general("privacy")}
+               <div className="flex flex-auto sm:flex-none gap-[15px] h-full justify-between items-center">
+                    <div className="flex gap-[15px]">
+                         <div
+                              onClick={() => null}
+                              className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] transition-opacity cursor-pointer capitalize"
+                         >
+                              {general("privacy")}
+                         </div>
+                         <div
+                              onClick={() => null}
+                              className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] transition-opacity cursor-pointer capitalize"
+                         >
+                              {general("terms")}
+                         </div>
                     </div>
-                    <div
-                         onClick={() => null}
-                         className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] transition-opacity cursor-pointer capitalize"
-                    >
-                         {general("terms")}
+                    <div className="flex gap-[15px]">
+                         <DropdownMenu>
+                              <DropdownMenuTrigger>
+                                   <Button className="rounded-lg capitalize" variant="outline">
+                                        {footer("select_language")}
+                                   </Button>
+                              </DropdownMenuTrigger>
+                              <DropdownMenuContent className="rounded-lg text-center">
+                                   <DropdownMenuItem onClick={() => router.replace(pathname, { locale: "en" })}>{lang("english")}</DropdownMenuItem>
+                                   <DropdownMenuItem onClick={() => router.replace(pathname, { locale: "fa" })}>{lang("persian")}</DropdownMenuItem>
+                              </DropdownMenuContent>
+                         </DropdownMenu>
+                         <ModeToggle />
                     </div>
-                    <DropdownMenu>
-                         <DropdownMenuTrigger>
-                              <Button className="rounded-lg font-semibold capitalize" variant="outline">
-                                   {footer("select_language")}
-                              </Button>
-                         </DropdownMenuTrigger>
-                         <DropdownMenuContent className="rounded-lg text-center">
-                              <DropdownMenuItem onClick={() => router.replace(pathname, { locale: "en" })}>{lang("english")}</DropdownMenuItem>
-                              <DropdownMenuItem onClick={() => router.replace(pathname, { locale: "fa" })}>{lang("persian")}</DropdownMenuItem>
-                         </DropdownMenuContent>
-                    </DropdownMenu>
-                    <ModeToggle />
                </div>
           </div>
      )

@@ -1,20 +1,26 @@
+"use client"
+
+import PostItem from "@/components/post-item";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useRouter } from "next/navigation";
 
 export default function BlogPage({
      params: { locale }
 }: {
      params: { locale: string }
 }) {
+     const router = useRouter()
+
      return (
-          <div className="flex w-full h-full py-2 font-normal">
-               <div className="flex w-full gap-2">
-                    <div className="w-full bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-5 px-5 py-3">
-                         پست ها
-                    </div>
-                    <div className="w-[350px] bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-5 px-5 py-3">
-                         سایدبار
-                    </div>
-               </div>
-          </div>
+          <>
+               <PostItem />
+               <PostItem />
+               <PostItem />
+               <PostItem />
+               <PostItem />
+               <PostItem />
+               <PostItem />
+          </>
      );
 }

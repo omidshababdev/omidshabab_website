@@ -1,7 +1,7 @@
 const Background = () => {
      return (
           <div className="absolute w-full h-full z-0 overflow-hidden">
-               <svg width="1440" height="832" className="absolute" xmlns="http://www.w3.org/2000/svg">
+               <svg className="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_77_5)">
                          <circle cx="5" cy="5" r="5" fill="black" fillOpacity="0.05" />
                          <circle cx="25" cy="5" r="5" fill="black" fillOpacity="0.05" />

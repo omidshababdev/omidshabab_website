@@ -2,6 +2,8 @@
 
 import Footer from "@/components/footer"
 import Header from "@/components/header"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 
 export default function BlogLayout({
      children
@@ -9,9 +11,35 @@ export default function BlogLayout({
      children: React.ReactNode
 }) {
      return (
-          <div className="flex flex-col items-center h-screen max-w-[1200px] w-[1200px]">
+          <div className="flex flex-col min-h-full max-w-[1200px] w-[1200px]">
                <Header />
-               {children}
+               <div className="flex flex-1 w-full min-h-max py-2 font-normal gap-[30px]">
+                    <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] gap-y-[50px]">
+                         {children}
+                    </div>
+                    <div className="hidden sm:block w-[380px] space-y-[20px]">
+                         <div className="top-0 bg-black bg-opacity-[3%] dark:bg-white dark:bg-opacity-[3%] w-full px-5 py-4 space-y-5">
+                              <div className="space-y-2">
+                                   <p>
+                                        خبرنامه آموزشی
+                                   </p>
+                                   <p className="text-[12px] text-[#3e3e3e] dark:text-[#cbcbcb] leading-[24px]">
+                                        با عضویت در این خبرنامه از جدیدترین پست ها با خبر میشی و هیچ چیزی رو از دست نمیدی!
+                                   </p>
+                              </div>
+                              <div className="space-y-2">
+                                   <Input className="bg-transparent rounded-lg" placeholder="ایمیل مبارکت رو وارد کن ..." />
+                                   <Button className="w-full rounded-lg" variant="outline">
+                                        می خوام عضو بشم
+                                   </Button>
+                                   <p className="text-[12px] text-[#3e3e3e] dark:text-[#cbcbcb]">
+                                        قول میدم اذیتت نکنم!
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div className="h-[50px]" />
                <Footer />
           </div>
      )
