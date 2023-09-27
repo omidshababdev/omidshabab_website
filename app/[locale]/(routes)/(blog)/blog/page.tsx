@@ -13,7 +13,7 @@ export default function BlogPage({
      const router = useRouter()
 
      return (
-          <>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] gap-y-[50px]">
                <PostItem />
                <PostItem />
                <PostItem />
@@ -21,6 +21,6 @@ export default function BlogPage({
                <PostItem />
                <PostItem />
                <PostItem />
-          </>
+          </div>
      );
 }

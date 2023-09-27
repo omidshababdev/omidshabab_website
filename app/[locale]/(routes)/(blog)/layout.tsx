@@ -14,7 +14,7 @@ export default function BlogLayout({
           <div className="flex flex-col min-h-full max-w-[1200px] w-[1200px]">
                <Header />
                <div className="flex flex-1 w-full min-h-max py-2 font-normal gap-[30px]">
-                    <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] gap-y-[50px]">
+                    <div className="w-full">
                          {children}
                     </div>
                     <div className="hidden sm:block w-[380px] space-y-[20px]">
@@ -28,7 +28,7 @@ export default function BlogLayout({
                                    </p>
                               </div>
                               <div className="space-y-2">
-                                   <Input className="bg-transparent rounded-lg" placeholder="ایمیل مبارکت رو وارد کن ..." />
+                                   <Input className="bg-transparent rounded-lg dark:border-1 dark:border-white dark:border-opacity-5 focus:border-2 focus:border-opacity-10" placeholder="ایمیل مبارکت رو وارد کن ..." />
                                    <Button className="w-full rounded-lg" variant="outline">
                                         می خوام عضو بشم
                                    </Button>

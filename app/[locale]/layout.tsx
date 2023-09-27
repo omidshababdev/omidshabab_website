@@ -1,4 +1,3 @@
-import Background from '@/components/background'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Locale } from '@/config/i18n-config'
 import { getTranslations } from '@/get-translations'
@@ -117,7 +116,7 @@ export default async function RootLayout({
     <html lang={locale} dir={dir}>
       <body className={cn(
         font,
-        "flex justify-center min-h-screen"
+        "flex justify-center min-h-screen bg-opacity-5 relative"
       )}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider
@@ -129,7 +128,7 @@ export default async function RootLayout({
             <div className="z-10">
               {children}
             </div>
-            <Background />
+            <div className="absolute background w-full min-h-full z-0 bg-white opacity-5 dark:opacity-10" />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
