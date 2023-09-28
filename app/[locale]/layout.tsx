@@ -8,10 +8,6 @@ import { NextIntlClientProvider } from 'next-intl'
 import localFont from "next/font/local"
 import { notFound } from 'next/navigation'
 
-import { Quicksand } from 'next/font/google'
-
-const englishLatoFont = Quicksand({ subsets: ['latin'] })
-
 // Dynamic Metadata based on locales
 export async function generateMetadata({
   params: { locale },
@@ -29,12 +25,42 @@ export async function generateMetadata({
 }
 
 // Locale Fonts
-export const englishMonaSansFont = localFont({
+const englishMonaSansFont = localFont({
   src: "../../public/fonts/en/MonaSans/MonaSans[slnt,wdth,wght].woff2",
   variable: "--font-heading",
 })
 
-export const englishRecoletaFont = localFont({
+const englishPlusJakartaSansFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/en/PlusJakartaSans/PlusJakartaSans-Light.ttf",
+      weight: "300"
+    },
+    {
+      path: "../../public/fonts/en/PlusJakartaSans/PlusJakartaSans-Regular.ttf",
+      weight: "400"
+    },
+    {
+      path: "../../public/fonts/en/PlusJakartaSans/PlusJakartaSans-Medium.ttf",
+      weight: "500"
+    },
+    {
+      path: "../../public/fonts/en/PlusJakartaSans/PlusJakartaSans-SemiBold.ttf",
+      weight: "600"
+    },
+    {
+      path: "../../public/fonts/en/PlusJakartaSans/PlusJakartaSans-Bold.ttf",
+      weight: "700"
+    },
+    {
+      path: "../../public/fonts/en/PlusJakartaSans/PlusJakartaSans-SemiBold.ttf",
+      weight: "800"
+    },
+  ],
+  variable: "--font-heading",
+})
+
+const englishRecoletaFont = localFont({
   src: [
     {
       path: "../../public/fonts/en/Recoleta/Recoleta-Thin.ttf",
@@ -68,25 +94,25 @@ export const englishRecoletaFont = localFont({
   variable: "--font-heading",
 })
 
-export const persianEstedadFont = localFont({
+const persianEstedadFont = localFont({
   src: "../../public/fonts/fa/Estedad/Estedad-FD[KSHD,wght].woff2",
   variable: "--font-heading",
 })
 
-export function LangFont(locale: string): string {
+function LangFont(locale: string): string {
   switch (locale) {
     case "en":
-      return englishLatoFont.className
+      return englishRecoletaFont.className
     case "fa":
       return persianEstedadFont.className
     default:
-      return englishLatoFont.className
+      return englishRecoletaFont.className
   }
 }
 
-export function LangDir(locale: string): string {
+function LangDir(locale: string): string {
   switch (locale) {
-    case "en" || "fr":
+    case "en":
       return "ltr"
     case "fa":
       return "rtl"

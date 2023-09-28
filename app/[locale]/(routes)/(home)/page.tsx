@@ -5,10 +5,6 @@ import Header from "@/components/header"
 import { cn } from "@/lib/utils"
 import { useTranslations } from "next-intl"
 
-import { Sacramento } from "next/font/google"
-
-const font = Sacramento({ subsets: ['latin'], weight: '400' })
-
 export default function Home({
      params: { locale }
 }: {
@@ -21,7 +17,7 @@ export default function Home({
                <Header />
                <div className={cn(
                     "flex h-full items-center text-[30px] leading-[60px] md:text-[50px] sm:leading-[80px] font-light px-5 sm:px-0",
-                    locale === "en" && font.className
+                    locale === "en" && "font-semibold"
                )}>
                     {home("title")}
                </div>
