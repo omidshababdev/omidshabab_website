@@ -1,23 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Locale } from "@/config/i18n-config";
-import { getTranslations } from "@/get-translations";
-import { Metadata, ResolvingMetadata } from "next";
-
-// Dynamic Metadata based on locales
-export async function generateMetadata({
-     params: { locale }
-}: {
-     params: { locale: Locale }
-     parent?: ResolvingMetadata
-}): Promise<Metadata> {
-
-     const translations = await getTranslations(locale)
-
-     return {
-          title: translations.general.privacy,
-          description: translations.general.name,
-     }
-}
 
 export default function SoftwareEngineeringRoadmapEbook() {
      return (
