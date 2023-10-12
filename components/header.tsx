@@ -23,6 +23,36 @@ export default function Header() {
                          >
                               {general("blog")}
                          </div>
+                         <div
+                              onClick={() => router.push("/portfolios")}
+                              className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
+                         >
+                              نمونه کار
+                         </div>
+                         <div
+                              onClick={() => router.push("/ebooks")}
+                              className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
+                         >
+                              ایبوک
+                         </div>
+                         <div
+                              onClick={() => router.push("/courses")}
+                              className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
+                         >
+                              دوره آموزشی
+                         </div>
+                         <div
+                              onClick={() => router.push("/about-me")}
+                              className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
+                         >
+                              درباره من
+                         </div>
+                         <div
+                              onClick={() => router.push("/contact")}
+                              className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
+                         >
+                              تماس با من
+                         </div>
                     </div>
                </div>
 
