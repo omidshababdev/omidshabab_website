@@ -16,7 +16,7 @@ export default function Header() {
                     >
                          {general("omid_shabab")}
                     </div>
-                    <div className="flex gap-[20px] text-[14px]">
+                    <div className="hidden sm:flex gap-[20px] text-[14px]">
                          <div
                               onClick={() => router.push("/blog")}
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
