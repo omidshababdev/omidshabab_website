@@ -1,6 +1,6 @@
 const PortfolioSidebar = () => {
      return (
-          <div className="hidden sm:block w-full">
+          <div className="block w-full">
                <div className="top-10 sticky space-y-[20px]">
                     <div className="bg-black bg-opacity-[3%] dark:bg-white dark:bg-opacity-[3%] w-full px-7 py-6 space-y-5">
                          <p className="text-[22px] sm:text-[25px] leading-[50px]">
