@@ -17,11 +17,12 @@ export default function Header() {
                          {general("omid_shabab")}
                     </div>
                     <div className="hidden sm:flex gap-[20px] text-[14px]">
+
                          <div
-                              onClick={() => router.push("/blog")}
+                              onClick={() => router.push("/courses")}
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
                          >
-                              {general("blog")}
+                              دوره آموزشی
                          </div>
                          <div
                               onClick={() => router.push("/portfolios")}
@@ -30,18 +31,19 @@ export default function Header() {
                               نمونه کار
                          </div>
                          <div
+                              onClick={() => router.push("/blog")}
+                              className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
+                         >
+                              {general("blog")}
+                         </div>
+                         {/* <div
                               onClick={() => router.push("/ebooks")}
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
                          >
                               ایبوک
-                         </div>
-                         <div
-                              onClick={() => router.push("/courses")}
-                              className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
-                         >
-                              دوره آموزشی
-                         </div>
-                         <div
+                         </div> */}
+
+                         {/* <div
                               onClick={() => router.push("/about-me")}
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
                          >
@@ -52,13 +54,13 @@ export default function Header() {
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
                          >
                               تماس با من
-                         </div>
+                         </div> */}
                     </div>
                </div>
 
                <div className="flex">
                     <Button className="rounded-lg capitalize" variant="outline">
-                         {header("free_downloads")}
+                         نقشه راه رایگان
                     </Button>
                </div>
           </div>

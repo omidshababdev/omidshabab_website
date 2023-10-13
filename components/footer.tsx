@@ -17,7 +17,7 @@ export default function Footer() {
                     {footer("copyright")}
                </div>
                <div className="flex flex-auto sm:flex-none gap-[15px] h-full justify-end items-center">
-                    <div className="hidden sm:flex gap-[15px]">
+                    {/* <div className="hidden sm:flex gap-[15px]">
                          <div
                               onClick={() => null}
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] transition-opacity cursor-pointer capitalize"
@@ -30,7 +30,7 @@ export default function Footer() {
                          >
                               {general("terms")}
                          </div>
-                    </div>
+                    </div> */}
                     <div className="flex gap-[15px]">
                          <DropdownMenu>
                               <DropdownMenuTrigger>
