@@ -13,7 +13,7 @@ const CourseItem = () => {
                </div>
                <div className="space-y-2">
                     <p className="text-lg">
-                         عنوان دوره
+                         عنوان دوره آموزشی
                     </p>
                     <p className="text-sm text-[#3e3e3e] dark:text-[#cbcbcb] leading-[28px]">
                          با عضویت در این خبرنامه از جدیدترین پست ها با خبر میشی و هیچ چیزی رو از دست نمیدی!

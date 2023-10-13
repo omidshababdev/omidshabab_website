@@ -1,6 +1,6 @@
 "use client"
 
-import CourseSidebar from "@/components/course-sidebar"
+import PortfolioSidebar from "@/components/portfolio-sidebar"
 
 export default function PortfolioLayout({
      children
@@ -12,7 +12,7 @@ export default function PortfolioLayout({
                <div className="w-full">
                     {children}
                </div>
-               <CourseSidebar />
+               <PortfolioSidebar />
           </div>
      )
 }
