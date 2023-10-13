@@ -1,5 +1,6 @@
 import PortfolioItem from "@/components/portfolio-item";
 import Sidebar from "@/components/sidebar";
+import Portfolios from "@/data/portfolios.json"
 
 export default async function CategoryPage() {
      return (
@@ -10,8 +11,13 @@ export default async function CategoryPage() {
                               دسته بندی
                          </p>
                          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] gap-y-[50px]">
-                              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((index) => (
-                                   <PortfolioItem key={index} />
+                              {Portfolios.map((index) => (
+                                   <PortfolioItem
+                                        key={index}
+                                        title={index.title}
+                                        category={index.category}
+                                        slug={index.slug}
+                                   />
                               ))}
                          </div>
                     </div>
