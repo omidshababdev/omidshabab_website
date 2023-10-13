@@ -18,7 +18,6 @@ export default async function CategoryPage({
                               {Courses.map((index) =>
                                    index.lang === locale && (
                                         <CourseItem
-                                             key={index}
                                              title={index.title}
                                              price={index.price}
                                              category={index.category}
