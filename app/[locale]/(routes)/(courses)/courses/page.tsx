@@ -20,8 +20,8 @@ export default function CoursesPage({
                                         category={index.category}
                                         slug={index.slug}
                                    />
-
-                              ))}
+                              ),
+                         )}
                     </div>
                </div>
                <Sidebar />

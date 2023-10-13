@@ -2,7 +2,15 @@
 
 import { useRouter } from "next/navigation";
 
-const PortfolioItem = () => {
+const PortfolioItem = ({
+     title,
+     category,
+     slug,
+}: {
+     title: string,
+     category: string,
+     slug: string
+}) => {
      const router = useRouter()
 
      return (
@@ -12,11 +20,11 @@ const PortfolioItem = () => {
                </div>
                <div className="space-y-2">
                     <p className="text-lg">
-                         عنوان نمونه کار
+                         {title}
                     </p>
-                    <p className="text-sm text-[#3e3e3e] dark:text-[#cbcbcb] leading-[28px]">
-                         با عضویت در این خبرنامه از جدیدترین پست ها با خبر میشی و هیچ چیزی رو از دست نمیدی!
-                    </p>
+                    {/* <p className="text-sm text-[#3e3e3e] dark:text-[#cbcbcb] leading-[28px]">
+                         {category}
+                    </p> */}
                </div>
           </div>
      );

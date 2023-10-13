@@ -1,20 +1,20 @@
 [
   {
-    "title": "دوره صفر تا صد زبان برنامه نویسی جاوا اسکریپت",
+    "title": "طراحی و پیاده سازی وب اپلیکیشن دیسکورد - Discord",
     "lang": "fa",
     "images": ["", ""],
-    "category": "software-development",
-    "slug": "javascript",
+    "category": "nextjs",
+    "slug": "discord",
     "desc": "",
     "createdAt": "",
     "updatedAt": ""
   },
   {
-    "title": "دوره صفر تا صد زبان برنامه نویسی دارت",
+    "title": "طراحی و پیاده سازی اپلیکیشن موبایل استوری ساز - نسخه اندروید و IOS",
     "lang": "fa",
     "image": "",
-    "category": "software-development",
-    "slug": "dart",
+    "category": "flutter",
+    "slug": "storysaz",
     "desc": "",
     "createdAt": "",
     "updatedAt": ""
