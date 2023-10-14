@@ -1,6 +1,6 @@
 "use client"
 
-import CourseSidebar from "@/components/course-sidebar"
+import CourseSidebar from "@/app/[locale]/(routes)/(courses)/_components/course-sidebar"
 
 export default function CourseLayout({
      children

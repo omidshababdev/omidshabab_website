@@ -1,4 +1,4 @@
-import CourseItem from "@/components/course-item";
+import CourseItem from "@/app/[locale]/(routes)/(courses)/_components/course-item";
 import Sidebar from "@/components/sidebar";
 import Courses from "@/data/courses.json"
 

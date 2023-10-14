@@ -1,6 +1,6 @@
 "use client"
 
-import PortfolioSidebar from "@/components/portfolio-sidebar"
+import PortfolioSidebar from "@/app/[locale]/(routes)/(portfolios)/_components/portfolio-sidebar"
 
 export default function PortfolioLayout({
      children

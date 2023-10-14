@@ -1,4 +1,4 @@
-import PostItem from "@/components/post-item";
+import PostItem from "@/app/[locale]/(routes)/(blog)/_components/post-item";
 import Sidebar from "@/components/sidebar";
 
 export default async function CategoryPage() {

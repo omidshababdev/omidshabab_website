@@ -1,4 +1,4 @@
-import PortfolioItem from "@/components/portfolio-item"
+import PortfolioItem from "@/app/[locale]/(routes)/(portfolios)/_components/portfolio-item"
 import Sidebar from "@/components/sidebar"
 import Portfolios from "@/data/portfolios.json"
 

@@ -1,6 +1,6 @@
 "use client"
 
-import PostItem from "@/components/post-item";
+import PostItem from "@/app/[locale]/(routes)/(blog)/_components/post-item";
 import Sidebar from "@/components/sidebar";
 import { useRouter } from "next/navigation";
 
