@@ -7,6 +7,7 @@ import type { Metadata, ResolvingMetadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
 import localFont from "next/font/local"
 import { notFound } from 'next/navigation'
+import { Inter } from "next/font/google";
 
 // Dynamic Metadata based on locales
 export async function generateMetadata({
@@ -25,9 +26,18 @@ export async function generateMetadata({
 }
 
 // Locale Fonts
+const inter = Inter({ subsets: ["latin"] });
+
 const englishMonaSansFont = localFont({
   src: "../../public/fonts/en/MonaSans/MonaSans[slnt,wdth,wght].woff2",
   variable: "--font-heading",
+})
+
+const englishSatoshiFont = localFont({
+  src: "../../public/fonts/en/Satoshi/Satoshi-Variable.ttf",
+  variable: "--font-heading",
+  display: 'fallback',
+  style: "absolute"
 })
 
 const englishPlusJakartaSansFont = localFont({
@@ -102,11 +112,11 @@ const persianEstedadFont = localFont({
 function LangFont(locale: string): string {
   switch (locale) {
     case "en":
-      return englishRecoletaFont.className
+      return englishSatoshiFont.className
     case "fa":
       return persianEstedadFont.className
     default:
-      return englishRecoletaFont.className
+      return englishSatoshiFont.className
   }
 }
 
