@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.background {
+/* .background {
   background-color: #f7f7f7;
   background-image:  radial-gradient(#000000 5px, transparent 5px), radial-gradient(#000000 5px, #f7f7f7 5px);
   background-size: 80px 80px;
   background-position: 0 0,40px 40px;
-}
+} */
  
 @layer base {
   :root {
