@@ -15,11 +15,13 @@ export default function Home({
      return (
           <main className="flex flex-col items-center h-screen max-w-[800px]">
                <Header />
-               <div className={cn(
-                    "flex h-full items-center text-[30px] leading-[60px] md:text-[50px] sm:leading-[80px] font-light px-5 sm:px-0",
-                    locale === "en" && "font-semibold"
-               )}>
-                    {home("title")}
+               <div className="flex flex-col justify-center items-center h-full text-center">
+                    <div className="w-[120px] h-[120px] bg-black bg-opacity-[5%] rounded-full">
+
+                    </div>
+                    <h2 className="items-center text-[30px] leading-[60px] md:text-[40px] sm:leading-[80px] font-light px-5 sm:px-0">
+                         {home("title")}
+                    </h2>
                </div>
                <Footer />
           </main>
