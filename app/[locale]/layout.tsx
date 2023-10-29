@@ -26,7 +26,7 @@ export async function generateMetadata({
 }
 
 // Locale Fonts
-const inter = Inter({ subsets: ["latin"] });
+const englishInterFont = Inter({ subsets: ["latin"] });
 
 const englishMonaSansFont = localFont({
   src: "../../public/fonts/en/MonaSans/MonaSans[slnt,wdth,wght].woff2",
@@ -109,14 +109,32 @@ const persianEstedadFont = localFont({
   variable: "--font-heading",
 })
 
+const persianRokhFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/fa/Rokh/RokhFaNum-Light.ttf",
+      weight: "300"
+    },
+    {
+      path: "../../public/fonts/fa/Rokh/RokhFaNum-Medium.ttf",
+      weight: "500"
+    },
+    {
+      path: "../../public/fonts/fa/Rokh/RokhFaNum-Bold.ttf",
+      weight: "700"
+    },
+  ],
+  variable: "--font-heading",
+})
+
 function LangFont(locale: string): string {
   switch (locale) {
     case "en":
-      return englishSatoshiFont.className
+      return englishInterFont.className
     case "fa":
-      return persianEstedadFont.className
+      return persianRokhFont.className
     default:
-      return englishSatoshiFont.className
+      return englishInterFont.className
   }
 }
 
@@ -161,7 +179,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="z-10">
+            <div className="w-full z-10">
               {children}
             </div>
             <div className="absolute background w-full min-h-full z-0 bg-white opacity-5 dark:opacity-10" />

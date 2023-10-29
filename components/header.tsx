@@ -8,21 +8,21 @@ export default function Header() {
      const header = useTranslations("header");
 
      return (
-          <div className="flex w-full top-0 gap-[20px] py-[20px] sm:py-[30px] justify-between items-center px-5 sm:px-0">
+          <div className="flex w-full top-0 gap-[20px] py-[20px] sm:py-[30px] justify-between items-center px-5 sm:px-0 border-b">
                <div className="flex gap-[20px] sm:gap-[30px] h-full items-center">
                     <div
-                         className="text-[18px] gap-[10px] flex items-center justify-center"
+                         className="text-[18px] gap-[10px] flex flex-1 items-center justify-center"
                     >
                          <a
-                              className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] transition-opacity cursor-pointer"
+                              className="hover:text-black hover:text-opacity-[50%] font-bold text-2xl dark:hover:text-white dark:hover:text-opacity-[90%] transition-opacity cursor-pointer"
                               onClick={() => router.push("/")}
                          >
                               {general("omid_shabab")}
                          </a>
 
-                         <span className="text-[12px] px-3 py-1 bg-black bg-opacity-5 rounded-full">توسعه نرم افزار</span>
+                         <span className="hidden lg:block text-[12px] px-3 py-1 bg-black bg-opacity-5 rounded-full">توسعه نرم افزار</span>
                     </div>
-                    <div className="hidden sm:flex gap-[20px] text-[14px]">
+                    <div className="hidden sm:flex gap-[25px] text-[16px] font-medium">
 
                          <div
                               onClick={() => router.push("/courses")}
@@ -65,7 +65,7 @@ export default function Header() {
                </div>
 
                <div className="flex">
-                    <Button className="rounded-lg capitalize" variant="outline">
+                    <Button className="capitalize rounded-none font-bold" size="lg" variant="outline">
                          نقشه راه رایگان
                     </Button>
                </div>

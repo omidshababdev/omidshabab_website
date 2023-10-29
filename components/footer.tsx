@@ -12,7 +12,7 @@ export default function Footer() {
      const footer = useTranslations("footer");
 
      return (
-          <div className="flex w-full gap-[20px] bottom-0 py-[20px] sm:py-[30px] justify-between items-center text-[14px] px-5 sm:px-0">
+          <div className="flex w-full gap-[20px] bottom-0 py-[20px] sm:py-[30px] justify-between items-center text-[14px] px-5 sm:px-0 border-t">
                <div className="hidden sm:w-full sm:flex sm:flex-grow">
                     {footer("copyright")}
                </div>
@@ -32,9 +32,10 @@ export default function Footer() {
                          </div>
                     </div> */}
                     <div className="flex gap-[15px]">
+                         <ModeToggle />
                          <DropdownMenu>
                               <DropdownMenuTrigger>
-                                   <Button className="rounded-lg capitalize" variant="outline">
+                                   <Button className="rounded-none capitalize font-bold" variant="outline">
                                         {footer("select_language")}
                                    </Button>
                               </DropdownMenuTrigger>
@@ -43,7 +44,7 @@ export default function Footer() {
                                    <DropdownMenuItem onClick={() => router.replace(pathname, { locale: "fa" })}>{lang("persian")}</DropdownMenuItem>
                               </DropdownMenuContent>
                          </DropdownMenu>
-                         <ModeToggle />
+
                     </div>
                </div>
           </div>
