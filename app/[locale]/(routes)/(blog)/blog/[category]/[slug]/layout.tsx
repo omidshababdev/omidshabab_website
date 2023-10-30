@@ -1,6 +1,7 @@
 "use client"
 
 import PostSidebar from "@/app/[locale]/(routes)/(blog)/_components/post-sidebar"
+import Sidebar from "@/components/sidebar"
 
 export default function PostLayout({
      children
@@ -12,7 +13,7 @@ export default function PostLayout({
                <div className="w-full">
                     {children}
                </div>
-               <PostSidebar />
+               <Sidebar />
           </div>
      )
 }

@@ -1,6 +1,7 @@
 "use client"
 
 import CourseSidebar from "@/app/[locale]/(routes)/(courses)/_components/course-sidebar"
+import Sidebar from "@/components/sidebar"
 
 export default function CourseLayout({
      children
@@ -12,7 +13,7 @@ export default function CourseLayout({
                <div className="w-full">
                     {children}
                </div>
-               <CourseSidebar />
+               <Sidebar />
           </div>
      )
 }
