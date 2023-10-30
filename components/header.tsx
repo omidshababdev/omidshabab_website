@@ -82,9 +82,11 @@ export default function Header() {
                               <Button variant="outline" className="rounded-none font-bold">منو</Button>
                          </SheetTrigger>
                          <SheetContent>
-                              <div className="grid gap-4 py-4">
-                                   <Button variant="outline" className="rounded-none font-bold" size="lg">حساب کاربری</Button>
-                              </div>
+                              <SheetClose asChild>
+                                   <div className="grid pt-[50px]">
+                                        <Button variant="outline" className="rounded-none font-bold" size="lg">حساب کاربری</Button>
+                                   </div>
+                              </SheetClose>
                          </SheetContent>
                     </Sheet>
                </div>
