@@ -9,7 +9,7 @@ export default function PostLayout({
      children: React.ReactNode
 }) {
      return (
-          <div className="flex flex-1 w-full min-h-max px-5 py-5 font-normal gap-[30px] sm:py-10">
+          <div className="flex flex-1 w-full min-h-max px-5 py-5 font-normal gap-[30px] sm:px-0 sm:py-10">
                <div className="w-full">
                     {children}
                </div>
