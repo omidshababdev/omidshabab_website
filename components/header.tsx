@@ -11,7 +11,7 @@ export default function Header() {
           <div className="flex w-full top-0 gap-[20px] py-[20px] sm:py-[30px] justify-between items-center px-5 sm:px-0 border-b">
                <div className="flex gap-[20px] sm:gap-[30px] h-full items-center">
                     <div
-                         className="text-[18px] gap-[10px] flex flex-1 items-center justify-center"
+                         className="text-[18px] gap-[10px] sm:flex flex-1 items-center justify-center"
                     >
                          <a
                               className="hover:text-black hover:text-opacity-[50%] font-bold text-2xl dark:hover:text-white dark:hover:text-opacity-[90%] transition-opacity cursor-pointer"

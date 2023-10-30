@@ -9,7 +9,7 @@ export default function BlogLayout({
      children: React.ReactNode
 }) {
      return (
-          <div className="w-full px-20">
+          <div className="w-full md:px-20">
                <Header />
                {children}
                <div className="h-[50px]" />
