@@ -19,7 +19,7 @@ export default function Home({
                <div className="w-full min-w-max px-20">
                     <Header />
                </div>
-               <div className="flex lg:flex-1 w-full">
+               <div className="flex  sm:flex-1 w-full">
                     <div className="flex flex-col h-auto w-full px-20 py-30 justify-center items-center text-start">
                          <h2 className="w-full items-center text-[30px] font-bold leading-[60px] md:text-[80px] sm:leading-[120px] px-5 sm:px-0">
                               سلام 👋 من <br /> امید شباب هستم!

@@ -20,7 +20,7 @@ export default function Header() {
                               {general("omid_shabab")}
                          </a>
 
-                         <span className="hidden lg:block text-[12px] px-3 py-1 bg-black bg-opacity-5 rounded-full">توسعه نرم افزار</span>
+                         {/* <span className="hidden lg:block text-[12px] px-3 py-1 bg-black bg-opacity-5 rounded-full">توسعه نرم افزار</span> */}
                     </div>
                     <div className="hidden sm:flex gap-[25px] text-[16px] font-medium">
 
@@ -64,7 +64,7 @@ export default function Header() {
                     </div>
                </div>
 
-               <div className="flex">
+               <div className="hidden sm:flex">
                     <Button className="capitalize rounded-none font-bold" size="lg" variant="outline">
                          نقشه راه رایگان
                     </Button>
