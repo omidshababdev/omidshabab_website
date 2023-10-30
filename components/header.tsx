@@ -14,6 +14,7 @@ import {
      SheetTitle,
      SheetTrigger,
 } from "@/components/ui/sheet"
+import Link from "next/link";
 
 export default function Header() {
      const router = useRouter();
@@ -83,8 +84,31 @@ export default function Header() {
                          </SheetTrigger>
                          <SheetContent>
                               <SheetClose asChild>
-                                   <div className="grid pt-[50px]">
-                                        <Button variant="outline" className="rounded-none font-bold" size="lg">حساب کاربری</Button>
+                                   <div className="flex flex-col gap-5 pt-[50px] text-slate-700">
+                                        <Link
+                                             className="w-full rounded-none font-bold text-[25px] text-start cursor-pointer"
+                                             href="/courses"
+                                        >
+                                             دوره آموزشی
+                                        </Link>
+                                        <Link
+                                             className="w-full rounded-none font-bold text-[25px] text-start cursor-pointer"
+                                             href="/portfolios"
+                                        >
+                                             نمونه کار
+                                        </Link>
+                                        <Link
+                                             className="w-full rounded-none font-bold text-[25px] text-start cursor-pointer"
+                                             href="/blog"
+                                        >
+                                             وبلاگ
+                                        </Link>
+                                        <Link
+                                             className="w-full rounded-none font-bold text-[25px] text-start cursor-pointer"
+                                             href="/ebooks"
+                                        >
+                                             ایبوک
+                                        </Link>
                                    </div>
                               </SheetClose>
                          </SheetContent>

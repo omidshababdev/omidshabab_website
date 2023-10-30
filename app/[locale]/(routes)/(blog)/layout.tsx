@@ -12,7 +12,6 @@ export default function BlogLayout({
           <div className="w-full md:px-20">
                <Header />
                {children}
-               <div className="h-[50px]" />
                <Footer />
           </div>
      )
