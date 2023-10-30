@@ -1,0 +1,24 @@
+[
+     {
+       "title": "دوره صفر تا صد زبان برنامه نویسی جاوا اسکریپت",
+       "lang": "fa",
+       "image": "",
+       "price": "رایگان",
+       "category": "software-development",
+       "slug": "javascript",
+       "desc": "",
+       "createdAt": "",
+       "updatedAt": ""
+     },
+     {
+       "title": "دوره صفر تا صد زبان برنامه نویسی دارت",
+       "lang": "fa",
+       "image": "",
+       "price": "رایگان",
+       "category": "software-development",
+       "slug": "dart",
+       "desc": "",
+       "createdAt": "",
+       "updatedAt": ""
+     }
+   ]

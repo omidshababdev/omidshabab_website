@@ -8,7 +8,7 @@ export default async function CategoryPage({
      params: { locale: string }
 }) {
      return (
-          <div className="flex flex-1 w-full min-h-max py-2 font-normal gap-[30px] px-5 sm:px-0">
+          <div className="flex flex-1 w-full min-h-max py-10 font-normal gap-[30px] px-5 sm:px-0">
                <div className="w-full">
                     <div className="flex flex-1 flex-col h-full space-y-[30px]">
                          <p className="text-lg">
