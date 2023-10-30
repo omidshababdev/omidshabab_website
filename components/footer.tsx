@@ -39,7 +39,7 @@ export default function Footer() {
                                         {footer("select_language")}
                                    </Button>
                               </DropdownMenuTrigger>
-                              <DropdownMenuContent className="rounded-lg text-center">
+                              <DropdownMenuContent className="rounded-none text-center">
                                    <DropdownMenuItem onClick={() => router.replace(pathname, { locale: "en" })}>{lang("english")}</DropdownMenuItem>
                                    <DropdownMenuItem onClick={() => router.replace(pathname, { locale: "fa" })}>{lang("persian")}</DropdownMenuItem>
                               </DropdownMenuContent>

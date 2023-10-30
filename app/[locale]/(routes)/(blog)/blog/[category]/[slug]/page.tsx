@@ -13,7 +13,7 @@ export default async function PostPage({
 }) {
      return (
           <div className="flex flex-col h-full space-y-[30px]">
-               <p className="font-bold text-[22px] sm:text-[35px] leading-[50px] sm:leading-[70px]">
+               <p className="font-bold text-[25px] sm:text-[35px] leading-[50px] sm:leading-[70px]">
                     معرفی نکست جی اس - صفر تا صد - به همراه راهنمای قدم به قدم و تسلط به ساختار آن + ویدیوی معرفی کامل در یوتیوب
                </p>
                <div className="bg-black bg-opacity-[5%] dark:bg-white dark:bg-opacity-[5%] w-full aspect-[5/3]">

@@ -25,7 +25,7 @@ export function ModeToggle() {
           <Moon className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="center" className="rounded-lg capitalize">
+      <DropdownMenuContent align="center" className="rounded-none capitalize">
         <DropdownMenuItem onClick={() => setTheme("light")}>
           <Sun className="mr-2 h-4 w-4" />
           <span>{general("light")}</span>

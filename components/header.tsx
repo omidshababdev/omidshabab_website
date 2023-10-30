@@ -1,6 +1,19 @@
 import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
+
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import {
+     Sheet,
+     SheetClose,
+     SheetContent,
+     SheetDescription,
+     SheetFooter,
+     SheetHeader,
+     SheetTitle,
+     SheetTrigger,
+} from "@/components/ui/sheet"
 
 export default function Header() {
      const router = useRouter();
@@ -63,7 +76,18 @@ export default function Header() {
                          </div>
                     </div>
                </div>
-
+               <div className="flex sm:hidden">
+                    <Sheet>
+                         <SheetTrigger asChild>
+                              <Button variant="outline" className="rounded-none font-bold">منو</Button>
+                         </SheetTrigger>
+                         <SheetContent>
+                              <div className="grid gap-4 py-4">
+                                   <Button variant="outline" className="rounded-none font-bold" size="lg">حساب کاربری</Button>
+                              </div>
+                         </SheetContent>
+                    </Sheet>
+               </div>
                <div className="hidden sm:flex">
                     <Button className="capitalize rounded-none font-bold" size="lg" variant="outline">
                          نقشه راه رایگان
