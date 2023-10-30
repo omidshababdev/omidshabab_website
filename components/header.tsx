@@ -42,15 +42,15 @@ export default function Header() {
                          >
                               {general("blog")}
                          </div>
-                         {/* <div
+                         <div
                               onClick={() => router.push("/ebooks")}
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
                          >
                               ایبوک
-                         </div> */}
+                         </div>
 
-                         {/* <div
-                              onClick={() => router.push("/about-me")}
+                         <div
+                              onClick={() => router.push("/about")}
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
                          >
                               درباره من
@@ -60,7 +60,7 @@ export default function Header() {
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] capitalize transition-opacity cursor-pointer"
                          >
                               تماس با من
-                         </div> */}
+                         </div>
                     </div>
                </div>
 

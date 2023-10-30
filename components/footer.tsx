@@ -13,24 +13,24 @@ export default function Footer() {
 
      return (
           <div className="flex w-full gap-[20px] bottom-0 py-[20px] sm:py-[30px] justify-between items-center text-[14px] px-5 sm:px-0 border-t">
-               <div className="hidden sm:w-full sm:flex sm:flex-grow">
+               <div className="hidden text-[15px] font-semibold text-slate-700 sm:w-full sm:flex sm:flex-grow">
                     {footer("copyright")}
                </div>
                <div className="flex flex-auto sm:flex-none gap-[15px] h-full justify-end items-center">
-                    {/* <div className="hidden sm:flex gap-[15px]">
+                    <div className="hidden sm:flex gap-[15px]">
                          <div
-                              onClick={() => null}
+                              onClick={() => router.push("/privacy")}
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] transition-opacity cursor-pointer capitalize"
                          >
                               {general("privacy")}
                          </div>
                          <div
-                              onClick={() => null}
+                              onClick={() => router.push("/terms")}
                               className="hover:text-black hover:text-opacity-[50%] dark:hover:text-white dark:hover:text-opacity-[90%] transition-opacity cursor-pointer capitalize"
                          >
                               {general("terms")}
                          </div>
-                    </div> */}
+                    </div>
                     <div className="flex gap-[15px]">
                          <ModeToggle />
                          <DropdownMenu>
