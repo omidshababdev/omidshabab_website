@@ -37,7 +37,7 @@ export default function Home({
 
                     <div className="bg-black bg-opacity-[5%] container w-full h-[500px] lg:h-screen relative">
                          <Image
-                              src="/omidshabab-image.jpg"
+                              src="/omidshabab-image.png"
                               fill
                               style={{
                                    objectFit: 'cover',
