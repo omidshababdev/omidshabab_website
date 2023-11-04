@@ -2,7 +2,7 @@ import PostItem from "@/app/[locale]/(routes)/(blog)/_components/post-item";
 import Sidebar from "@/components/sidebar";
 import axios from "axios";
 
-interface Post {
+export interface Post {
      id: number
      attributes: {
           title: string
