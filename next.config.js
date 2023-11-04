@@ -7,6 +7,10 @@ const withNextIntl = require("next-intl/plugin")(
 module.exports = withNextIntl({
   reactStrictMode: true,
   images: {
-    domains: ["avatars.githubusercontent.com", "lh3.googleusercontent.com"],
+    domains: [
+      "avatars.githubusercontent.com",
+      "lh3.googleusercontent.com",
+      "api.omidshabab.com",
+    ],
   },
 });

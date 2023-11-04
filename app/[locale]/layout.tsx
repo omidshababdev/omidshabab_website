@@ -130,11 +130,11 @@ const persianRokhFont = localFont({
 function LangFont(locale: string): string {
   switch (locale) {
     case "en":
-      return englishInterFont.className
+      return persianRokhFont.className
     case "fa":
       return persianRokhFont.className
     default:
-      return englishInterFont.className
+      return persianRokhFont.className
   }
 }
 
