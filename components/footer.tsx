@@ -1,8 +1,9 @@
 import { useTranslations } from "next-intl";
-import { usePathname, useRouter } from 'next-intl/client';
+// import { usePathname, useRouter } from "next-intl";
 import { ModeToggle } from "@/components/mode-toggle"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Footer() {
      const router = useRouter();
@@ -33,7 +34,7 @@ export default function Footer() {
                     </div>
                     <div className="flex gap-[15px]">
                          <ModeToggle />
-                         <DropdownMenu>
+                         {/* <DropdownMenu>
                               <DropdownMenuTrigger>
                                    <Button className="rounded-none capitalize font-bold" variant="outline">
                                         {footer("select_language")}
@@ -43,7 +44,7 @@ export default function Footer() {
                                    <DropdownMenuItem onClick={() => router.replace(pathname, { locale: "en" })}>{lang("english")}</DropdownMenuItem>
                                    <DropdownMenuItem onClick={() => router.replace(pathname, { locale: "fa" })}>{lang("persian")}</DropdownMenuItem>
                               </DropdownMenuContent>
-                         </DropdownMenu>
+                         </DropdownMenu> */}
 
                     </div>
                </div>

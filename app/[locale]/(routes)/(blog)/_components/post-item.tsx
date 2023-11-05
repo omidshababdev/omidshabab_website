@@ -19,7 +19,7 @@ const PostItem = ({
      return (
 
           <div onClick={() => router.push(`/blog/${category}/${slug}`)} className="group space-y-5 cursor-pointer">
-               <div className="bg-black bg-opacity-[5%] object-cover group-hover:bg-opacity-[8%] dark:bg-white dark:bg-opacity-[5%] dark:group-hover:bg-opacity-[8%] w-full aspect-[6/4]">
+               <div className="bg-black bg-opacity-[5%] object-cover group-hover:bg-opacity-[8%] dark:bg-white dark:bg-opacity-[5%] dark:group-hover:bg-opacity-[8%] w-full aspect-[5/3]">
                     {image && (
                          <Image
                               src={`https://api.omidshabab.com/${image}`}

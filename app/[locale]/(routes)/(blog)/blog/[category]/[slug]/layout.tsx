@@ -1,6 +1,3 @@
-"use client"
-
-import PostSidebar from "@/app/[locale]/(routes)/(blog)/_components/post-sidebar"
 import Sidebar from "@/components/sidebar"
 
 export default function PostLayout({

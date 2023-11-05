@@ -24,9 +24,9 @@ const withMDX = createMDX({
     remarkPlugins: [remarkGfm],
     rehypePlugins: [],
   },
-  experimental: {
-    mdxRs: true,
-  },
+  // experimental: {
+  //   mdxRs: true,
+  // },
 });
 
 export default withNextIntl(withMDX(nextConfig));

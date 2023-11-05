@@ -159,6 +159,8 @@ export default async function RootLayout({
   const font = LangFont(locale)
   const dir = LangDir(locale)
 
+  const timeZone = 'Europe/Vienna';
+
   let messages;
   try {
     messages = (await import(`../../translations/${locale}.json`)).default;
@@ -172,7 +174,7 @@ export default async function RootLayout({
         font,
         "flex justify-center min-h-screen bg-opacity-5 relative"
       )}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider timeZone={timeZone} locale={locale} messages={messages}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
