@@ -16,7 +16,7 @@ export default function EbooksCategoryPage({
                               دسته بندی
                          </p>
                          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] gap-y-[50px]">
-                              {Ebooks.map((index) =>
+                              {/* {Ebooks.map((index) =>
                                    index.lang === locale && (
                                         <EbookItem
                                              title={index.title}
@@ -25,7 +25,7 @@ export default function EbooksCategoryPage({
                                              slug={index.slug}
                                         />
                                    ),
-                              )}
+                              )} */}
                          </div>
                     </div>
                </div>

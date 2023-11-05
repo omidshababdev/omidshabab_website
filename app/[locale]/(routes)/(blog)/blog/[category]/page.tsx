@@ -10,11 +10,11 @@ export default async function CategoryPage() {
                               دسته بندی
                          </p>
                          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] gap-y-[50px]">
+                              {/* <PostItem />
                               <PostItem />
                               <PostItem />
                               <PostItem />
-                              <PostItem />
-                              <PostItem />
+                              <PostItem /> */}
                          </div>
                     </div>
                </div>

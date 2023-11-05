@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-// import { usePathname, useRouter } from "next-intl";
+// import { usePathname, useRouter } from "next-intl/client";
 import { ModeToggle } from "@/components/mode-toggle"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"

@@ -15,7 +15,7 @@ export default async function CategoryPage({
                               دسته بندی
                          </p>
                          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] gap-y-[50px]">
-                              {Courses.map((index) =>
+                              {/* {Courses.map((index) =>
                                    index.lang === locale && (
                                         <CourseItem
                                              title={index.title}
@@ -24,7 +24,7 @@ export default async function CategoryPage({
                                              slug={index.slug}
                                         />
                                    ),
-                              )}
+                              )} */}
                          </div>
                     </div>
                </div>

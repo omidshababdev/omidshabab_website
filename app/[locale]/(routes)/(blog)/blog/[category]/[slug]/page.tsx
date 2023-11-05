@@ -1,42 +1,7 @@
 import axios from "axios";
-import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown"
 import { redirect } from "next/navigation"
-import rehypeHighlight from "rehype-highlight";
-// import SyntaxHighlighter from "react-syntax-highlighter"
-// import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs"
-
-
-// Dynamic Metadata based on locales
-export async function generateMetadata({
-     params: {
-          locale,
-          slug
-     },
-}: {
-     params: {
-          locale: Locale,
-          slug: string,
-     },
-     parent?: ResolvingMetadata
-}): Promise<Metadata> {
-
-     const res = await axios.get(`${process.env.BACKEND_URL}/posts?locale=${locale}&populate=*&filters[slug][$contains]=${slug}`, {
-          headers: {
-               Authorization:
-                    `Bearer ${process.env.BACKEND_API_KEY}`,
-          },
-     })
-
-     const posts = res.data;
-
-     return {
-          title: posts.data[0].attributes.title,
-          description: posts.data[0].attributes.short_desc,
-     }
-}
-
 
 // Main part
 const PostPage = async ({
@@ -61,13 +26,6 @@ const PostPage = async ({
 
      const posts = res.data;
 
-     // const options = {
-     //      mdxOptions: {
-     //           remarkPlugins: [],
-     //           rehypePlugins: [rehypeHighlight],
-     //      }
-     // }
-
      if (!posts.data[0]) redirect("/404")
 
      return (
@@ -89,7 +47,6 @@ const PostPage = async ({
                </div>
                <div className="space-y-[10px]">
                     <ReactMarkdown
-                         children={posts.data[0].attributes.desc}
                          components={{
                               h1: ({ children }) =>
                                    <h1 className="text-2xl font-bold">{children}</h1>,
@@ -101,56 +58,10 @@ const PostPage = async ({
                                    <h4 className="text-[22px] sm:text-[25px] font-semibold leading-[50px] text-slate-800 py-5">{children}</h4>,
                               p: ({ children }) =>
                                    <p className="text-[20px] leading-[50px] sm:text-[22px] sm:leading-[60px] text-slate-600">{children}</p>,
-                              image: ({ src, alt, ...props }: { src: string, alt: string }) => {
-                                   return (
-                                        <Image
-                                             src={src}
-                                             alt={alt}
-                                             style={{ width: "100%", height: "auto" }}
-                                             layout="responsive"
-                                             {...props}
-                                        />
-                                   )
-                              },
-                              code({
-                                   node,
-                                   inline,
-                                   className,
-                                   children,
-                                   ...props }: {
-                                        node: string;
-                                        inline: boolean;
-                                        className: string;
-                                        children: React.ReactNode;
-                                   }) {
-                                   const match = /language-(\w+)/.exec(className || '')
-                                   return
-                                   // inline && match ? (
-                                   <div dir="ltr">
-                                        {children}
-                                   </div>
-                                   // <pre>
-                                   //      <code className="language-js">
-                                   //           {children}
-                                   //      </code>
-                                   // </pre>
-                                   // <SyntaxHighlighter
-                                   //      children={String(children).replace(/\n$/, '')}
-                                   //      style={dracula}
-                                   //      language=""
-                                   // PreTag="div"
-                                   // {...props}
-                                   // >
-                                   //      {children}
-                                   // </SyntaxHighlighter>
-                                   // ) : (
-                                   //      <span className={className} {...props}>
-                                   //           {children}
-                                   //      </span>
-                                   // )
-                              }
                          }}
-                    />
+                    >
+                         {posts.data[0].attributes.desc}
+                    </ReactMarkdown>
                </div>
 
           </div>
